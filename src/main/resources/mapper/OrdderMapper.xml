@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.OrdderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.entity.Ordder">
+        <id column="oid" property="oid" />
+        <result column="id" property="id" />
+        <result column="vid" property="vid" />
+        <result column="dateTime" property="datetime" />
+        <result column="beginTime" property="begintime" />
+        <result column="endTime" property="endtime" />
+        <result column="rentalDays" property="rentaldays" />
+        <result column="Amount" property="amount" />
+        <result column="mark" property="mark" />
+        <result column="isend" property="isend" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        oid, vid, dateTime, beginTime, endTime, rentalDays, Amount, mark, isend
+    </sql>
+
+</mapper>
